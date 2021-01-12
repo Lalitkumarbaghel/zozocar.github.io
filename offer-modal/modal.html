@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Muli:300&display=swap" rel="stylesheet">
+<style type="text/css">
+	/* Offer modal */
+	.ofrmodalbg { position: relative; width: 100%; height: 500px; background-position: -60% 76%; border: none; }
+	.gpbtn { width: 150px;  position: absolute; right: 0px; bottom: 0px;  margin-right: 50px;  margin-bottom: 65px;}
+	.downloadtxt { position: absolute; right: 24px; bottom: 0px; font-weight: 700; margin-bottom: 120px; margin-right: 50px; font-size: 15px; }
+	.ofrimg { width: 100%; position: absolute;  left: 0; top: 0px;}
+	.ofrmodalclose { position: absolute; z-index: 9; right: 20px; }
+  .visible-banner { display: block; }
+  #cookie-law { 
+    max-width:940px;
+    background:#EEEADD; 
+    margin:10px auto 0; 
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+}
+ 
+#cookie-law p { 
+    padding:10px; 
+    font-size:1.2em; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#682008; 
+    margin:0;
+}
+	@media only screen and (max-width: 575px) {
+		.ofrmodalbg { height: 220px !important; }
+		.gpbtn { width: 100px; margin-top: 0px;  position: absolute; bottom: 0px; padding-left: 0px; margin-bottom: 8px; margin-right: 10px }
+		.downloadtxt {margin-bottom: 45px; margin-right: 15px; font-size: 12px;  position: absolute; bottom: 0px; right: 0px; font-weight: 700;  }
+	}
+	@media only screen and (min-width: 576px) and (max-width: 991px) {
+		.ofrmodalbg { height: 312px !important; }
+		.gpbtn { width: 100px; margin-top: 0px;  position: absolute; bottom: 0px; padding-left: 0px; margin-bottom: 50px; margin-right: 35px }
+		.downloadtxt {margin-bottom: 88px; margin-right: 42px; font-size: 12px;  position: absolute; bottom: 0px; right: 0px; font-weight: 700;  }	
+	}
+</style>
+</head>
+<body onload="checkCookie()">
+
+
+<div class="modal hide fade" id="offermodal">
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    	<div class="modal-content ofrmodalbg">
+		  <div class="modal-body">
+	  		<button type="button" class="close ofrmodalclose" data-dismiss="modal">&times;</button>
+	  		<img src="offer.jpg" alt="" class="ofrimg">
+	  		<p class="downloadtxt">Download App</p>
+			<a href="https://play.google.com/store/apps/details?id=com.app.zozocar" target="_blank">
+				<img src="google-play.png" alt="" class="gpbtn">
+			</a>
+		  </div>
+		</div>
+	</div>	  
+</div>
+
+<script type="text/javascript">
+    /*$(window).on('load',function(){
+        $('#offermodal').modal('show');
+    });*/
+  $('#offermodal').on('hidden.bs.modal', function (e) {
+    // set cookie
+   document.cookie = "showModalOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  })
+</script>
+<!-- offer modal cookies -->
+<script type="text/javascript">
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+        }
+    return "";
+}
+
+// open modal only if cookie is not set
+if ( getCookie('showModalOnlyOnce') !== 'true' ) {
+    $('#offermodal').modal('show');
+}
+</script>
+
+
+</body>
+</html>

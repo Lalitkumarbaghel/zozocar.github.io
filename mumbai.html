@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ZOZOCARS</title>
+	<!-- css -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/png"  href="images/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Vinod Custom Css -->
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<!-- Fontawesome icon 5.9 -->
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+	<!-- Fontawesome icon 4.7 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Datepicker -->
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+	<link rel="stylesheet" href="css/jquery.datetimepicker.css">
+	<link rel="stylesheet" href="css/bootstrap-clockpicker.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!-- https://weareoutman.github.io/clockpicker/ -->
+	
+</head>
+<body>
+<header id="header">
+	
+<div class="container-fluid nav_bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-3">
+				<div class="logo_box">
+					<a href="index.html">
+						<img src="images/logo.svg" alt="" style="width: 160px">
+					</a>
+				</div>
+				
+			</div>
+			<div class="col-sm-12 col-md-9">
+				<div class="main_nab_box">
+					<div class="user_icon">
+						<button data-toggle="modal" data-target="#exampleModal"><i class="far fa-user-circle"></i><p>Sign Up/ Log in</p></button>
+					</div>
+						<div class="nav_signup">
+							
+							<ul>
+								<li><a href="JavaScript:Void(0);" class="sign" data-toggle="modal" data-target="#exampleModal"> Sign Up</a></li>
+								<li><a href="JavaScript:Void(0);" class="login" data-toggle="modal" data-target="#exampleModal">Log in</a></li>
+							</ul>
+						</div>
+						<div class="navbartop">
+							<ul>
+								<li><a href="findaride.html" ><img src="images/navsearch.png"> Find a Ride</a></li>
+								<li><a href="offer-ride.html"><img src="images/rideicon.png"> Offer a Ride</a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<!-- <div class="col-md-1"></div> -->
+			<!-- <div class="col-md-4">
+				<div class="navbartop">
+					<ul>
+						<li><a href="#"><img src="images/navsearch.png"> Find a Ride</a></li>
+						<li><a href="#"><img src="images/rideicon.png"> Offer a Ride</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="nav_signup">
+					<ul>
+						<li><a href="#" class="sign"> Sign Up</a></li>
+						<li><a href="#" class="login">Log in</a></li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+</header><!-- /header -->
+<!-- start Find Ride -->
+<div class="container-fluid findridebg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<h1 class="findride-hding_inner">Mumbai To Pune One Way <span>ZOZO CAR</span> Services</h1>
+				<h2 class="findride_title">180,00+ people trust Zozo Car to share rides between cities in Inida</h2>
+				<form action="" method="post" enctype="multipart/form-data" class="findrideform">
+					<div class="row">
+						<div class="col-12 col-md-4 pr-md-0">
+							<div class="findreide_group">
+								<input type="text" name="from" class="findride_control findride_from" value="From" onfocus="if(this.value !='') {this.value ='';}" onblur="if (this.value == '') {this.value = 'From';}" />
+								<span class="fromicon"><i class="fas fa-map-marker-alt"></i></span>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pl-md-0 pr-md-0">
+							<div class="findreide_group">
+								<input type="text" name="to" class="findride_control findride_to" value="To" onfocus="if(this.value !='') {this.value = ''}" onblur="if(this.value =='') {this.value='To'}" />
+								<span class="toicon"><i class="fas fa-map-marker-alt"></i></span>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 pl-md-0">
+							<div class="findreide_group">
+								<input type="text" name="date" class="findride_control findride_date" id="default_datetimepicker" value="Date and Time" onfocus="if(this.value !='') {this.value=''}" onblur="if(this.value=='') {this.value='Date and Time'}" />
+								<span class="calendericon" id="datetimepicker4"><i class="far fa-calendar-alt"></i></span>
+							</div>
+						</div>
+						<div class="col-12 col-md-3">
+							<div class="findreide_group">
+								<button type="submit" class="firndride-btn">Find a Ride </button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-5">
+				<!-- <img src="images/animation-car.gif" alt="" class="img-fluid" /> -->
+			</div>
+		</div>
+	</div>		
+</div>
+<!-- End Find Ride -->
+<!-- start ride inforamtion -->
+<div class="container-fluid love2_us_t_p">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="find_ride">
+					<h5>Why People Love Us</h5>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="people_box">
+					<div class="row">
+						<div class="col-4 col-sm-12 col-md-4">
+							<div class="people_Booking people_Booking_position">
+								
+							</div>
+						</div>
+						<div class="col-8 col-sm-12 col-md-8 love_us_cnt_p_l">
+							<div class="love_us_cntnt">
+								<p class="love_us_head">Lowest Booking Age</p>
+								<p class="love_us_info">Start riding from just age 18 onwards.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-4">
+				<div class="people_box">
+					<div class="row">
+						<div class="col-4 col-sm-12 col-md-4">
+							<div class="people_Booking people_Booking_position2">
+								
+							</div>
+						</div>
+						<div class="col-8 col-sm-12 col-md-8 love_us_cnt_p_l">
+							<div class="love_us_cntnt">
+								<p class="love_us_head">Split Payment</p>
+								<p class="love_us_info">Share the booking cost amongst your friends along for the ride..</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-4 lave_us_medi">
+				<div class="people_box">
+					<div class="row">
+						<div class="col-4 col-sm-12 col-md-4">
+							<div class="people_Booking people_Booking_position3">
+								
+							</div>
+						</div>
+						<div class="col-8 col-sm-12 col-md-8 love_us_cnt_p_l">
+							<div class="love_us_cntnt">
+								<p class="love_us_head">Flexible Pricing</p>
+								<p class="love_us_info">Book by the hour, day or week. Or book with or without fuel too.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-4 love_us_p_t">
+				<div class="people_box">
+					<div class="row">
+						<div class="col-4 col-sm-12 col-md-4">
+							<div class="people_Booking people_Booking_position4">
+								
+							</div>
+						</div>
+						<div class="col-8 col-sm-12 col-md-8 love_us_cnt_p_l">
+							<div class="love_us_cntnt">
+								<p class="love_us_head">Instant Refund</p>
+								<p class="love_us_info">Refund and payments auto processed immediately.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-4 love_us_p_t">
+				<div class="people_box">
+					<div class="row">
+						<div class="col-4 col-sm-12 col-md-4">
+							<div class="people_Booking people_Booking_position5">
+								
+							</div>
+						</div>
+						<div class="col-8 col-sm-12 col-md-8 love_us_cnt_p_l">
+							<div class="love_us_cntnt">
+								<p class="love_us_head">No Security Deposit</p>
+								<p class="love_us_info">Book a vehicle without the hassle of security deposits.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-4 love_us_p_t">
+				<div class="people_box">
+					<div class="row">
+						<div class="col-4 col-sm-12 col-md-4">
+							<div class="people_Booking people_Booking_position6">
+								
+							</div>
+						</div>
+						<div class="col-8 col-sm-12 col-md-8 love_us_cnt_p_l">
+							<div class="love_us_cntnt">
+								<p class="love_us_head">Home Pickup</p>
+								<p class="love_us_info">Get your ride delivered right at your doorstep.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end ride information -->
+<!-- start driver -->
+<div class="container-fluid drivers_bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="find_ride">
+					<h5>Zozocar Riders</h5>
+				</div>
+			</div>
+		<!-- </div> -->
+			<div class="col-md-12 phone_lr_p">
+				<div class="drivers_box">
+					<div class="row driver_box_border">
+						<div class="col-sm-5 col-lg-3 driver_tab_pr">
+							<div class="driver_box_main">
+								<div class="diver_img">
+									<img src="images/driver.jpg" alt="">
+								</div>
+								<div class="driver_name">
+									<h6 class="name_drive">Jon</h6>
+									<p class="user_box"><i class="fas fa-user"></i> 448 driven</p>
+									<span class="driver_review"><i class="fas fa-star"></i> 5.0 252 reviews</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-7 col-lg-5">
+							<div class="middle_cntent_box">
+								<h5> <i class="fas fa-location-arrow"></i> Mumbai to Pune</h5>
+								<div class="timeing">
+									<p class="driver_Leav">Leaving <span>Friday, August 2 at 6:00am</span></p>
+									<p class="driver_Return">Returning <span>Friday, August 2 at 5:15pm</span></p>
+								</div>
+								<div class="droping_box">
+									<p class="driver_pick">Pickcup : <span>Mumbai</span></p>
+									<p class="driver_drop">Drop : <span>Pune</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-8 col-lg-2">
+							<div class="cars_box">
+								<img src="images/cars1.jpg" alt="" style="width: 150px">
+								<p>KUV D75 K2 Car 2018</p>
+								<ul>
+									<li><img src="images/seat.svg" alt=""></li>
+									<li><img src="images/portfolio.svg" alt=""></li>
+									<li><img src="images/cable-car.svg" alt=""></li>
+									<li><img src="images/bicycle.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-lg-2">
+							<div class="price_car">
+								<p>Trip full <br><span class="price_seat"> <i class="fas fa-rupee-sign"></i> 2000</span><br><span class="per_seat">per Seat</span></p>
+								<button data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--2nd-->
+			<div class="col-md-12 phone_lr_p" style="padding-top: 20px;">
+				<div class="drivers_box">
+					<div class="row driver_box_border">
+						<div class="col-sm-5 col-lg-3 driver_tab_pr">
+							<div class="driver_box_main">
+								<div class="diver_img">
+									<img src="images/driver.jpg" alt="">
+								</div>
+								<div class="driver_name">
+									<h6 class="name_drive">Jon</h6>
+									<p class="user_box"><i class="fas fa-user"></i> 448 driven</p>
+									<span class="driver_review"><i class="fas fa-star"></i> 5.0 252 reviews</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-7 col-lg-5">
+							<div class="middle_cntent_box">
+								<h5> <i class="fas fa-location-arrow"></i> Mumbai to Pune</h5>
+								<div class="timeing">
+									<p class="driver_Leav">Leaving <span>Friday, August 2 at 6:00am</span></p>
+									<p class="driver_Return">Returning <span>Friday, August 2 at 5:15pm</span></p>
+								</div>
+								<div class="droping_box">
+									<p class="driver_pick">Pickcup : <span>Mumbai</span></p>
+									<p class="driver_drop">Drop : <span>Pune</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-8 col-lg-2">
+							<div class="cars_box">
+								<img src="images/cars1.jpg" alt="" style="width: 150px">
+								<p>KUV D75 K2 Car 2018</p>
+								<ul>
+									<li><img src="images/seat.svg" alt=""></li>
+									<li><img src="images/portfolio.svg" alt=""></li>
+									<li><img src="images/cable-car.svg" alt=""></li>
+									<li><img src="images/bicycle.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-lg-2">
+							<div class="price_car">
+								<p>Trip full <br><span class="price_seat"> <i class="fas fa-rupee-sign"></i> 2000</span><br><span class="per_seat">per Seat</span></p>
+								<button data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--3nd-->
+			<div class="col-md-12 phone_lr_p" style="padding-top: 20px;">
+				<div class="drivers_box">
+					<div class="row driver_box_border">
+						<div class="col-sm-5 col-lg-3 driver_tab_pr">
+							<div class="driver_box_main">
+								<div class="diver_img">
+									<img src="images/driver.jpg" alt="">
+								</div>
+								<div class="driver_name">
+									<h6 class="name_drive">Jon</h6>
+									<p class="user_box"><i class="fas fa-user"></i> 448 driven</p>
+									<span class="driver_review"><i class="fas fa-star"></i> 5.0 252 reviews</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-7 col-lg-5">
+							<div class="middle_cntent_box">
+								<h5> <i class="fas fa-location-arrow"></i> Mumbai to Pune</h5>
+								<div class="timeing">
+									<p class="driver_Leav">Leaving <span>Friday, August 2 at 6:00am</span></p>
+									<p class="driver_Return">Returning <span>Friday, August 2 at 5:15pm</span></p>
+								</div>
+								<div class="droping_box">
+									<p class="driver_pick">Pickcup : <span>Mumbai</span></p>
+									<p class="driver_drop">Drop : <span>Pune</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-8 col-lg-2">
+							<div class="cars_box">
+								<img src="images/cars1.jpg" alt="" style="width: 150px">
+								<p>KUV D75 K2 Car 2018</p>
+								<ul>
+									<li><img src="images/seat.svg" alt=""></li>
+									<li><img src="images/portfolio.svg" alt=""></li>
+									<li><img src="images/cable-car.svg" alt=""></li>
+									<li><img src="images/bicycle.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-lg-2">
+							<div class="price_car">
+								<p>Trip full <br><span class="price_seat"> <i class="fas fa-rupee-sign"></i> 2000</span><br><span class="per_seat">per Seat</span></p>
+								<button data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end driver -->
+
+
+<div class="container-fluid according_padd according_padd_btm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="find_ride">
+					<h5>Popular Airport Cabs Routes</h5>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3">
+				<div class="populay_cntnt">
+					<p class="populay_price"><img src="images/iner.png" alt="" style="width: 15px;"> 1600</p>
+					<a href="#">
+						<img src="images/popurlicon1.png" alt="" class="place_img img-fuild d-block m-auto">
+						<h5>Mumbai to Pune</h5>
+					</a>
+					<p class="popular_address">4 Seats, 3 bags, Ac, No Smoking</p>
+					<a href="#">
+						<button class="book_now_btn" data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 find_rtop_padd_media2">
+				<div class="populay_cntnt">
+					<p class="populay_price"><img src="images/iner.png" alt="" style="width: 15px;"> 1600</p>
+					<a href="#">
+						<img src="images/popurlicon2.png" alt="" class="place_img img-fuild d-block m-auto">
+						<h5>Shirdi to Pune</h5>
+					</a>
+					<p class="popular_address">4 Seats, 3 bags, Ac, No Smoking</p>
+					<a href="#">
+						<button class="book_now_btn" data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 find_rtop_padd_media">
+				<div class="populay_cntnt">
+					<p class="populay_price"><img src="images/iner.png" alt="" style="width: 15px;"> 1600</p>
+					<a href="#">
+						<img src="images/popurlicon3.png" alt="" class="place_img img-fuild d-block m-auto">
+						<h5>Jaipur to Delhi</h5>
+					</a>
+					<p class="popular_address">4 Seats, 3 bags, Ac, No Smoking</p>
+					<a href="#">
+						<button class="book_now_btn" data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-3 find_rtop_padd_media">
+				<div class="populay_cntnt">
+					<p class="populay_price"><img src="images/iner.png" alt="" style="width: 15px;"> 1600</p>
+					<a href="#">
+						<img src="images/popurlicon4.png" alt="" class="place_img img-fuild d-block m-auto">
+						<h5>Delhi to Chandigarh</h5>
+					</a>
+					<p class="popular_address">4 Seats, 3 bags, Ac, No Smoking</p>
+					<a href="#">
+						<button class="book_now_btn" data-toggle="modal" data-target="#exampleModal2">Book Now</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php include 'footer.php';?>

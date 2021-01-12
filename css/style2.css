@@ -1,0 +1,46 @@
+
+.findridebg { /*background: #cdebfe;*/ background: #c9f0ff url("../images/animation-car.gif") no-repeat; background-position: top right; background-size: contain;  }
+.findride-hding { color:  #002b4a; font-size: 70px; font-family: 'gilroyextrabold'; padding: 100px 0 30px; line-height: 70px; }
+.findride_title {font-size: 24px; color: #4b87b1; font-family: 'gilroylight'; font-weight: normal;  line-height: 30px; padding: 0 0 30px; }
+.findrideform { margin: 30px 0; }
+.findreide_group { position: relative; margin: 0 0 10px; }
+.findride_control { width: 100%; padding: 20px 16px 20px 35px; color: #565a5c; box-sizing: border-box; background: #fff; border: none;  }
+.findride_control:focus { outline: none; }
+.findride_from {  border-radius: 4px 0 0 4px; position: relative; }
+/*.findride_from::before { content: '\f3c5'; font-family: 'Font Awesome 5 Free'; display: inline-block; font-size: 20px; color: #369; position: absolute; left: 0; top: 0; z-index: 9; }*/
+.findride_to {  border-radius: 0px 0px 0px 0px; border-left: 1px solid #ddd; border-right: 1px solid #ddd;  }
+.findride_date {  border-radius: 0px 4px 4px 0px; }
+.firndride-btn { width: 100%; background: #002b4a; cursor: pointer; padding: 20px 20px; margin-top: 20px; font-size: 18px; color: #fff; display: block; text-align: center; border: none; outline: none; border-radius: 4px;  }
+.fromicon { position: absolute; left: 12px;  top: 18px; color: #002b4a; }
+.toicon { position: absolute; left: 12px;  top: 18px; color: #f30; }
+.calendericon {position: absolute; left: 12px;  top: 18px; color: #14a8e2;}
+
+
+/*.findride { background: url("../images/city-bg.png") no-repeat; background-size: contain; height: 700px; position: relative; }
+.cityrider { margin-top:50px; }
+.cloud1, .cloud2, .cloud3 { background:url('../images/cloud.png') no-repeat; width: 81px; height: 61px; background-size: 50px 26px; animation: movecloud 25s linear infinite; position: absolute; }
+.cloud1 { top: 0; right: 0; }
+.cloud2 { top: 60px; right: 200px;  background-size: 30px 21px; }
+.cloud3 { top: 30px; right: 500px }
+.car1, .car2, .car3 { background:url('../images/car.png') no-repeat; width: 80px; height: 40px; background-size: 50px 26px; animation: movecloud2 25s linear infinite; position: absolute; bottom: 0; }
+.car1 {  right: 0; }
+.car2 {  right: 200px;  background-size: 30px 21px; }
+.car3 {  right: 500px }
+
+@keyframes movecloud {
+    0%{margin-right:90%;opacity:1}
+    33%{opacity:.6}
+    50%{opacity:.3}
+    77%{opacity:1}
+    100%{margin-right:-10%;opacity:0}
+}*/
+@media only screen and (max-width:360px) {
+	.findride-hding { font-size: 54px; }
+}
+@media only screen and (max-width: 768px) {
+    .findridebg { background-position: bottom right;
+}
+@media only screen and (min-width: 769px) {
+    .pl-md-0 { padding-left: 0px !important; }
+    .pr-md-0 { padding-right: 0px !important; }
+}
